@@ -1,0 +1,131 @@
+// colors
+
+$bg-body-color: #eaf3f7;
+$bg-btn-color: #0c182a;
+$text-regular-color: #69717e;
+$text-bold-color: #384354;
+$logo-color: dodgerblue;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Rubik", serif;
+}
+
+body{
+    background-color: $bg-body-color;
+}
+
+main{
+    padding: 10px 0;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+button, input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+button{
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+}
+
+.xs{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.sm{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.base{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.large{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.xl{
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.boardcard{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px rgba(186, 214, 241, 0.1);
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: calc(65% - 10px) calc(35% - 10px);
+    gap: 20px;
+    padding: 30px 0;
+    color: $text-regular-color;
+}
+
+.scroll{
+    position: relative;
+    padding: 0 10px;
+    button{
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &:first-child{
+            display: none;
+            left: 0;
+            transform: translateX(-50%);
+        }
+        &:last-child{
+            right: 0;
+            transform: translateX(50%);
+        }
+    }
+}
+
+.to-left{
+    background: linear-gradient(90deg, #fff, #ddd, #fff);
+    background-size: 200%;
+    animation: toLeft 1s linear infinite;
+}
+@keyframes toLeft {
+    to{
+        background-position: 200%;
+    }
+}
+
+@media (max-width: 1000px){
+    .dashboard{
+        grid-template-columns: repeat(1, 100%);
+    }
+}

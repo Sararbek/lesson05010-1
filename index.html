@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=air,chevron_left,chevron_right,close,device_thermostat,humidity_percentage,keyboard_arrow_down,my_location,pin_drop,search,visibility,water_drop,water_lux,wb_sunny,wind_power" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>lesson05010</title>
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            
+            <!-- Header -->
+             <header class="boardcard">
+                <div class="nav">
+                    <div class="nav__logo">
+                        <p class="large">WeatherApp</p>
+                    </div>
+                    <form class="nav__search">
+                        <div class="nav__search__logo-input">
+                            <span class="material-symbols-outlined large">
+                                search
+                            </span>
+                            <input type="text">
+                        </button>
+                        </div>
+                        <button class="nav__search__btn">
+                            <span class="material-symbols-outlined large">
+                                my_location
+                                </span>
+                        </button>
+                    </form>
+                    <div class="nav__focused-info">
+                        <span class="material-symbols-outlined large">
+                            pin_drop
+                        </span>
+                        <p class="sm loacationName">Tashkent, Uzbekstan</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard -->
+             <div class="dashboard">
+                
+                <div class="dashboardleft">
+                    <div class="dashboardleft__one boardcard">
+                        <div class="dashboardleft__one__header">
+                            <div class="dashboardleft__one__headerleft">
+                                <p class="sm">Current weather</p>
+                                <p class="large rightTime">2:59PM</p>
+                            </div>
+                            <div class="dashboardleft__one__headerright changeTempRulerBtn">
+                                <p data-value="f" class="typeOfTemp">Foernheight</p>
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                                <ul class="dropTempRuler">
+                                    <li data-value="f">Forenheight</li>
+                                    <li data-value="c">Celsius</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dashboardleft__one__body">
+                            <div class="dashboardleft__one__img">
+                                <img class="weatherMainIcon" src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                            </div>
+                            <div class="dashboardleft__one__temp">
+                                <p class="xl weatherMainNum">12°</p>
+                                <p class="base">F</p>
+                            </div>
+                            <div class="dashboardleft__one__temp-info">
+                                <p class="sm typeOfDay">Rainy</p>
+                                <p class="sm feelsLike">Feels like 35°</p>
+                            </div>
+                        </div>
+                        <div class="dashboardleft__one__footer">
+                            <p>On this webpage, you can easily check the upcoming weather forecast.</p>
+                        </div>
+                    </div>
+
+                    <div class="dashboardleft__two">
+                        <div class="dashboardleft__two__innercard boardcard">
+                            <div class="dashboardleft__two__icon">
+                                <span class="material-symbols-outlined">
+                                    wind_power
+                                </span>
+                            </div>    
+                            <div class="dashboardleft__two__text">
+                                <p class="sm">Air quality</p>
+                                <p class="large airQuality">156</p>
+                            </div>
+                        </div>
+                        <div class="dashboardleft__two__innercard boardcard">
+                            <div class="dashboardleft__two__icon">
+                                <span class="material-symbols-outlined">
+                                    air
+                                </span>
+                            </div>    
+                            <div class="dashboardleft__two__text">
+                                <p class="sm">Wind</p>
+                                <p class="large windSpeed">1 mph</p>
+                            </div>
+                        </div>
+                        <div class="dashboardleft__two__innercard boardcard">
+                            <div class="dashboardleft__two__icon">
+                                <span class="material-symbols-outlined">
+                                    humidity_percentage
+                                </span>
+                            </div>    
+                            <div class="dashboardleft__two__text">
+                                <p class="sm">Humidity</p>
+                                <p class="large humidityRate">54%</p>
+                            </div>
+                        </div>
+                        <div class="dashboardleft__two__innercard boardcard">
+                            <div class="dashboardleft__two__icon">
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                            </div>    
+                            <div class="dashboardleft__two__text">
+                                <p class="sm">visibility</p>
+                                <p class="large visibility">3 mi</p>
+                            </div>
+                        </div>
+                        <div class="dashboardleft__two__innercard boardcard">
+                            <div class="dashboardleft__two__icon">
+                                <span class="material-symbols-outlined">
+                                    water_drop
+                                </span>
+                            </div>    
+                            <div class="dashboardleft__two__text">
+                                <p class="sm">chance of rain</p>
+                                <p class="large rainChance">0 %</p>
+                            </div>
+                        </div>
+                        <div class="dashboardleft__two__innercard boardcard">
+                            <div class="dashboardleft__two__icon">
+                                <span class="material-symbols-outlined">
+                                    device_thermostat
+                                </span>
+                            </div>    
+                            <div class="dashboardleft__two__text">
+                                <p class="sm">Real feel</p>
+                                <p class="large thermostat">16</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboardleft__three">
+                        <div class="dashboardleft__three__innercard boardcard">
+                            <div class="dashboardleft__three__icon">
+                                <span class="material-symbols-outlined">
+                                    wb_sunny
+                                </span>
+                                <p>Sunrise</p>
+                            </div>
+                            <div class="dashboardleft__three__text">
+                                <p class="sunrise">6:53</p>
+                            </div>
+                        </div>
+                        <div class="dashboardleft__three__innercard boardcard">
+                            <div class="dashboardleft__three__icon">
+                                <span class="material-symbols-outlined">
+                                    water_lux
+                                </span>
+                                <p>Sunset</p>
+                            </div>
+                            <div class="dashboardleft__three__text">
+                                <p class="sunset">6:53</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboardleft__four boardcard">
+                        <div class="dashboardleft__four__title">
+                            <p class="sm">Today's forecast</p>
+                        </div>
+                        <div class="scroll">
+                            <button class="scrollLeftBtn">
+                                <span class="material-symbols-outlined">
+                                    chevron_left
+                                </span>
+                            </button>
+                            <ul class="dashboardleft__four__innerparts scrollbar">
+                            </ul>
+                            <button class="scrollRightBtn">
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                             </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Loadding for  Dashboardleft -->
+                <div class="dashboardleft-loading">
+                    <div class="dashboardleft-loading__one boardcard to-left">
+                    </div>
+                    <div class="dashboardleft-loading__two">
+                    </div>
+                    <div class="dashboardleft-loading__three">
+                    </div>
+                    <div class="dashboardleft-loading__four boardcard to-left">
+                    </div>
+                </div>
+
+
+                <div class="dashboardright boardcard">
+                    <div class="dashboardright__title">
+                        <p class="sm">10-day forecast</p>
+                    </div>
+                    <ul class="dashboardright__innerparts">
+                    </ul>
+                </div>
+
+                <!-- Loading for dashboardright -->
+                 <div class="dashboardright-loading boardcard to-left">
+                 </div>
+             </div>
+
+        </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
